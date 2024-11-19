@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js" ></script>
+</head>
+<body>
+    <form class="form" name="r_form">
+        <table class="table" name="table">
+            <tr class="header">
+                <th colspan="2" >Registeration Form</th>
+            </tr>
+            <tr>
+                <td><label for="" >Student Name</label></td>
+                <td><input type="text" id="name" placeholder="example name"></td>
+            </tr> 
+            <tr>
+                <td><label for="" >Roll number</label></td>
+                <td><input type="text" id="roll_no" placeholder="220701278"><br></td>
+            </tr>
+            <tr>
+                <td ><label>Gender</label></td>
+                <div>
+                <td><input type="radio" id="male" name="gender" value="male">Male</td>
+                <td><input type="radio" id="female" name="gender" value="female">Female</td>
+                </div>
+            </tr>
+            <tr>
+                <td><label>Year</label></td>
+                <td><select id="year">
+                    <option value="1">1st year</option>
+                    <option value="2">2st year</option>
+                    <option value="3">3st year</option>
+                    <option value="4">4st year</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label >Department</label></td>
+                <td ><select id="dept">
+                    <option value="CSE">CSE</option>
+                    <option value="CSD">CSD</option>
+                    <option value="CSBS">CSBS</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="AIDS">AIDS</option>
+                    <option value="AIML">AIML</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="AERO">AERO</option>
+                    <option value="BML">BML</option>
+                    <option value="FT">FT</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="section" >Section</label></td>
+                <td><select id="section">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="" >Mobile Number</label></td>
+                <td><input type="number" placeholder="1234567890" id="mobile_number"></td>
+            </tr>
+            <tr>
+                <td><label for="" >E-mail ID</label></td>
+                <td><input type="text" id="email" placeholder="example@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label for="" >Address</label></td>
+                <td><input type="text" id="address" placeholder="district street house number"></td>
+            </tr>
+            <tr>
+                <td><label for="" >City</label></td>
+                <td><input type="text" id="city" placeholder="chennai"></td>
+            </tr>
+            <tr>
+                <td> <label for="" >Country</label></td>
+                <td><input type="text" id="country" placeholder="india"></td>
+            </tr>
+            <tr>
+                <td><label for="" >Pincode</label></td>
+                <td><input type="number" id="p_code" placeholder="602105"></td>
+            </tr>
+            <tr>
+                <td id="error"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="reset"></td>
+                <td><input type="submit" value="submit" onclick="validate(event)"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

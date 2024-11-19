@@ -1,0 +1,16 @@
+.form{
+    
+    background-color: papayawhip;
+    width: 30vw;
+    height:60vh;
+
+}
+.table{
+    justify-content: center;
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+
+.error{
+    border-color:red;
+}
